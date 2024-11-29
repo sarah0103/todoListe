@@ -24,7 +24,7 @@ TodoListe ist eine einfache Webanwendung, die es Nutzern ermöglicht, ToDos anzu
     npm install
 3. **Starten Sie den Server und das frontend**:
     ```sh   
-    npm run dev oder node server.js im frontend und backend Ordner
+    npm run dev im frontend und backend Ordner
 4. **Öffnen Sie Ihren Browser und navigieren Sie zu**:
     http://localhost:2000 sowie http://localhost:5173
    
