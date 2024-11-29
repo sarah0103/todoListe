@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
-import EditIcon from "@mui/icons-material/Edit"; // Importieren des Stift-Icons
+import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 function App() {
@@ -25,10 +25,6 @@ function App() {
         }
       })
       .catch((error) => console.error("Error:", error));
-  };
-
-  const handleChange = (event) => {
-    setInputValue(event.target.value);
   };
 
   const listItems = items.map((item) => (
@@ -67,7 +63,9 @@ function App() {
     e.preventDefault();
     if (editItem && editItem.text.trim() !== "") {
       axios
-        .put(`http://localhost:2000/api/todos/${editItem.id}`, { text: editItem.text })
+        .put(`http://localhost:2000/api/todos/${editItem.id}`, {
+          text: editItem.text,
+        })
         .then(() => {
           setEditItem(null); // Schließen des Bearbeitungsformulars
           fetchTodos();
@@ -87,6 +85,10 @@ function App() {
         })
         .catch((error) => console.error("Error:", error));
     }
+  };
+
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
   };
 
   const handleKeyDown = (e) => {
@@ -112,7 +114,7 @@ function App() {
       >
         Speichern
       </button>
-      <ol>{listItems}</ol>
+      <ul>{listItems}</ul>
 
       {/* Bearbeitungsformular */}
       {editItem && (

@@ -4,10 +4,9 @@ const path = require("path");
 const cors = require("cors");
 const app = express();
 const port = 2000;
-
-let todos = [];
 app.use(bodyParser.json());
 app.use(cors());
+let todos = [];
 
 app.get("/api/todos", (req, res) => {
   res.json(todos);
