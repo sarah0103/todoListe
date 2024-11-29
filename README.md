@@ -1,6 +1,6 @@
 # TodoListe
 
-TodoListe ist eine einfache Webanwendung, die es Nutzern ermöglicht, ToDos anzulegen sowie diese zu bearbeiten und löschen.
+**TodoListe** ist eine einfache Webanwendung, die es Nutzern ermöglicht, To-Dos zu erstellen, zu bearbeiten und zu löschen.
 
 ## Inhaltsverzeichnis
 
@@ -26,11 +26,10 @@ TodoListe ist eine einfache Webanwendung, die es Nutzern ermöglicht, ToDos anzu
 4. **Öffnen Sie Ihren Browser und navigieren Sie zu**:
     http://localhost:5173
    
-
 ## Verwendung
-- Eingabe von Aufgaben in das Eingabefeld und speichern durch Drücken der Entertaste oder des Buttons "Speichern"
-- Bereits erstellte Aufgaben durch ein Klick auf das Editier-Icon ändern
-- Aufgaben durch ein Klick auf das Delete-Icon aus der Liste entfernen
+- **Neue Aufgabe erstellen:** Geben Sie eine Aufgabe in das Eingabefeld ein und drücken Sie die Enter-Taste oder klicken Sie auf den Button "Speichern".
+- **Aufgabe bearbeiten:** Klicken Sie auf das Bearbeiten-Symbol (Stift-Icon) neben der Aufgabe.
+- **Aufgabe löschen:** Klicken Sie auf das Papierkorb-Icon, um die Aufgabe zu entfernen.
 
 
 ## Autoren
